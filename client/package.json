@@ -63,5 +63,6 @@
     "proxy": {
         "target":"http://127.0.0.1:5000/",
         "secure": false
-}
+},
+"engines": {"node": "16.16.0","npm":"8.11.0"}
 }

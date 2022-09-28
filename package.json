@@ -4,9 +4,8 @@
   "description": "",
   "main": "web.js",
   "scripts": {
-    "start": "npm start",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Valeria Rico",
@@ -27,6 +26,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  },
-  "engines": {"node": "16.16.0"}
+  }
 }
