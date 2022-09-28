@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.592dd859.css",
-    "main.js": "/static/js/main.f43a2a70.js",
+    "main.js": "/static/js/main.4fca1256.js",
     "static/js/135.d8ee2483.chunk.js": "/static/js/135.d8ee2483.chunk.js",
     "static/media/avengers.png": "/static/media/avengers.4bf86272c81bc41088cc.png",
     "static/media/blackWidow.png": "/static/media/blackWidow.eabf9c74926ebd31a99e.png",
@@ -21,11 +21,11 @@
     "static/media/Logo.jpg": "/static/media/Logo.56889e5ea717d76eaf99.jpg",
     "index.html": "/index.html",
     "main.592dd859.css.map": "/static/css/main.592dd859.css.map",
-    "main.f43a2a70.js.map": "/static/js/main.f43a2a70.js.map",
+    "main.4fca1256.js.map": "/static/js/main.4fca1256.js.map",
     "135.d8ee2483.chunk.js.map": "/static/js/135.d8ee2483.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.592dd859.css",
-    "static/js/main.f43a2a70.js"
+    "static/js/main.4fca1256.js"
   ]
 }

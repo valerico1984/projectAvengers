@@ -23,10 +23,10 @@ app.use(cookieParser());
 require('./server/routes')(app);
 
 app.get('*', (req, res) => res.status(200).send({
-	message: 'Bienvenid@s, estás en la Web Services de Aplicaciones Interactivas de UADE.',
+	message: 'Bienvenid@s, estás en la aplicación "Project Avengers',
 }));
 
-const port = parseInt(process.env.PORT, 10) || 8080;
+const port = parseInt(process.env.PORT, 10) || 8000;
 app.set('port', port);
 
 const server = http.createServer(app);
@@ -37,7 +37,7 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static(path.join(__dirname, 'client/build')));
   // Handle React routing, return all requests to React app
 	app.get('*', function(req, res) {
-	  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+	  res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
 	});
   }
 module.exports = app;
