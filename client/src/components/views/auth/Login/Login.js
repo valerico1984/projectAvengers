@@ -30,7 +30,7 @@ export const Login = () => {
     axios.get(`api/result`)
     
         .then((result) => {
-          setData(Array.from(result.data))
+          setData(result.data)
           console.log(result.data)}
         )
         .catch((error) => {
