@@ -43,7 +43,7 @@ header > div {
    border-radius: var(--global-radius);
    border: 0;
    color: white;
-   padding: 10px !important;
+   padding: 10px;
    font-size: 18px;
    font-weight: 500;
    cursor: pointer;
@@ -64,4 +64,27 @@ header > div {
    border-radius: 50%;
    width:70px;
    height: auto;
+}
+
+@media screen and (max-width:780px){
+
+   header {
+      box-shadow: 0 2px 5px #dbdbdb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 15px;
+      background-color: black;
+   }
+
+   .textdata{
+   text-align: center;
+   }
+   .wrapper_right_header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   
+   }
+     
 }

@@ -16,9 +16,6 @@ import thor from '../../../../img/thor.png'
 import logomarvel from '../../../../img/logomarvel.png'
 
 
-
-
-
 export const Login = () => {
   const navigate = useNavigate();
   
@@ -33,8 +30,11 @@ export const Login = () => {
     axios.get(`api/result`)
     
         .then((result) => {
-          setData(result.data)}
-        );
+          setData(Array.from(result.data))
+          console.log(result.data)}
+        )
+        .catch((error) => {
+          console.log(error)})
   }, [setData]);
 
 
@@ -130,7 +130,7 @@ export const Login = () => {
             onBlur={handleBlur}
           >
             <option value="">Selecciona tu nombre...</option>
-            {data?.map((option, id) => {
+            {data.map((option, id) => {
             return(
                 <option key={id} value={option.userName}>
                 {option.userName}

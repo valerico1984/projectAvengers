@@ -80,16 +80,16 @@ export const Header = () => {
       <img className='logo' src={logo} alt="Logo" />
       
       <div className="wrapper_right_header">
-         <div>{renderAvenger(userName)}</div>
-        <div className="textdata">Avenger: {userName}</div>
+          <div>{renderAvenger(userName)}</div>
+           <div className="textdata">Avenger: {userName}</div>
          
-        <div className="textdata">Estrategias creadas: {!tasks ? 0 : tasks.length}</div>
+          <div className="textdata">Estrategias creadas: {!tasks ? 0 : tasks.length}</div>
+            
         
-        <div>
+      </div> 
+      <div>
         <button className='buttonHeader' onClick={handleLogout}>Cerrar Sesión</button>
-        </div>
-      </div>
-       
+       </div>
     
     </header>
   );
