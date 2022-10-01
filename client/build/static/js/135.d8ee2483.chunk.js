@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkprojectavengers=self.webpackChunkprojectavengers||[]).push([[135],{4014:function(e,r,n){n.r(r),n.d(r,{default:function(){return c}});n(2791);var a=n.p+"static/media/404.b5014ad80253babdb107.png",t=n(184);function c(){return(0,t.jsx)("div",{className:"container",children:(0,t.jsx)("img",{src:a,alt:"error404"})})}}}]);
-//# sourceMappingURL=135.d8ee2483.chunk.js.map
