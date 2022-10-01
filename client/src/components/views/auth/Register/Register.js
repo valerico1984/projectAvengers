@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
@@ -11,22 +11,12 @@ import logocompleto from '../../../../img/logocompleto.png'
 import { swal2 } from "../../../../utils/swal2.jsx";
 import Swal from 'sweetalert2';
 
+const avengersName = ["Hulk","Spider Man", "Iron Man","Thor", "Capitán América", "Black Widow", "Hawk Eye"]
 
 
 export const Register = () => {
-  const [data, setData] = useState();
+ 
   const navigate = useNavigate();
-
-  useEffect(() => {
-    axios.get(`api/result`)
-    
-    .then((result) => {
-      setData(result.data)}
-  
-   
-    );
-  
-}, [setData]);
 
   
   const required = "*Campo obligatorio";
@@ -106,10 +96,10 @@ export const Register = () => {
             onBlur={handleBlur}
           >
             <option value="">Selecciona tu nombre...</option>
-            {data?.map((option, id) => {
+            {avengersName?.map((option) => {
             return(
-                <option key={id} value={option.userName}>
-                {option.userName}
+                <option key={option} value={option}>
+                {option}
               </option>)
 })}
           </select>

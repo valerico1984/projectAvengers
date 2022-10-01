@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import { useFormik } from "formik";
 import { useNavigate, Link } from "react-router-dom";
 import * as Yup from "yup";
@@ -16,29 +16,18 @@ import thor from '../../../../img/thor.png'
 import logomarvel from '../../../../img/logomarvel.png'
 
 
+const avengersName = ["Hulk","Spider Man", "Iron Man","Thor", "Capitán América", "Black Widow", "Hawk Eye"]
+
 export const Login = () => {
   const navigate = useNavigate();
   
-  const [data, setData] = useState([]);
-
   const initialValues = {
     userName: "avengers",
     password: "",
   }
 
-  useEffect(() => {
-    axios.get(`api/result`)
-    
-        .then((result) => {
-          setData(result.data)
-          console.log(result.data)}
-        )
-        .catch((error) => {
-          console.log(error)})
-  }, [setData]);
 
-
-  const required = "* Campo obligatorio";
+ const required = "* Campo obligatorio";
 
   const validationSchema = () =>
     Yup.object().shape({
@@ -130,10 +119,10 @@ export const Login = () => {
             onBlur={handleBlur}
           >
             <option value="">Selecciona tu nombre...</option>
-            {data.map((option, id) => {
+            {avengersName.map((option) => {
             return(
-                <option key={id} value={option.userName}>
-                {option.userName}
+                <option key={option} value={option}>
+                {option}
               </option>)
 })}
           </select>
